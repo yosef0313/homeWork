@@ -1,0 +1,14 @@
+{
+  "candidates": [
+    { "id": 1, "name": "Yossi Cohen", "email": "yossi@example.com", "position": "Frontend Developer", "status": "New", "experience": 3 },
+    { "id": 2, "name": "Sarah Levi", "email": "sarah@example.com", "position": "Backend Developer", "status": "Interview", "experience": 5 },
+    { "id": 3, "name": "Dana Ron", "email": "dana@example.com", "position": "Product Manager", "status": "Hired", "experience": 7 },
+    { "id": 4, "name": "Ron Shimoni", "email": "ron@example.com", "position": "Frontend Developer", "status": "New", "experience": 2 },
+    { "id": 5, "name": "Michal Tal", "email": "michal@example.com", "position": "Designer", "status": "Interview", "experience": 4 },
+    { "id": 6, "name": "David Beeri", "email": "david@example.com", "position": "Backend Developer", "status": "New", "experience": 1 },
+    { "id": 7, "name": "Noa Kirel", "email": "noa@unicorn.com", "position": "Frontend Developer", "status": "Hired", "experience": 6 },
+    { "id": 8, "name": "Gal Gadot", "email": "gal@wonder.com", "position": "Product Manager", "status": "Interview", "experience": 8 },
+    { "id": 9, "name": "Elon Musk", "email": "elon@tesla.com", "position": "Designer", "status": "New", "experience": 15 },
+    { "id": 10, "name": "Mark Zuk", "email": "mark@meta.com", "position": "Backend Developer", "status": "Hired", "experience": 10 }
+  ]
+}
