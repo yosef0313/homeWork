@@ -78,6 +78,7 @@ function CandidatesTable() {
   });
 
   // Real-time filtering: all active filters are combined with AND logic; memoized for performance.
+  // it can be used withoth useMemo in small datasets but i choose to use it for future large datasets.
   const filteredCandidates = useMemo(
   () => filterCandidates(candidates, filters),
   [candidates, filters]
