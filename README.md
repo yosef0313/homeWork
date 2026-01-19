@@ -49,9 +49,13 @@ Tech Stack
 Getting Started
 ---------------
 1) Install dependencies
+   
+   
    npm install
 
 2) Run the application (recommended)
+   
+   
    npm run start
 
    React app:      http://localhost:5173
@@ -98,7 +102,7 @@ src/
 
     theme.ts
 
-    
+
 db.json
 
 
