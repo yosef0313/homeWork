@@ -1,84 +1,127 @@
-Recruitment Portal
+╔══════════════════════════════════════════════════════════════════╗
+║                          RECRUITMENT PORTAL                      ║
+╚══════════════════════════════════════════════════════════════════╝
 
-A React + TypeScript application that displays a list of candidates in a table with real-time, combinable filters.
-The data is served from a local JSON Server, and the UI is built using Material UI (MUI).
+A React + TypeScript application that displays a list of candidates in a clean,
+responsive UI with real-time, combinable filters.
 
-Filtering logic is implemented as a pure function and covered by unit tests.
+• Data source  : Local JSON Server (mock API)
+• UI framework : Material UI (MUI)
+• Filtering    : Pure function + unit tests (Vitest)
+• Data fetching: TanStack Query (bonus)
 
-FEATURES
-- Candidates table including:
-  - Name
-  - Email
-  - Position
-  - Status
-  - Years of Experience
-- Four filter inputs:
-  - Text input: Name
-  - Select dropdown: Position
-  - Select dropdown: Status
-  - Number input: Years of Experience
-- Conditional filter behavior:
-  - Position filter is disabled until Name is filled
-  - Status filter is disabled until Position is selected
-  - Years of Experience is always enabled
-- Real-time filtering while typing/selecting
-- Filters are combinable using AND logic
-- Reset filters button
-- Responsive UI:
-  - Table layout on desktop
-  - Card layout on mobile
-- Double-click an email to copy it to clipboard (with visual feedback)
 
-TECH STACK
-- React
-- TypeScript
-- Vite
-- Material UI (MUI)
-- JSON Server (mock API)
-- TanStack Query (bonus)
-- Vitest (unit tests)
+────────────────────────────────────────────────────────────────────
+✨ FEATURES (WHAT YOU GET)
+────────────────────────────────────────────────────────────────────
 
-------------- GETTING STARTED -------------
+✅ Candidates Table
+   - Name
+   - Email  (double-click to copy + visual feedback)
+   - Position
+   - Status
+   - Years of Experience
 
-Install dependencies:
-npm install
+✅ Filters (AND logic — all active filters are applied together)
+   1) Name               → Text input
+   2) Position           → Select dropdown
+   3) Status             → Select dropdown
+   4) Years of Experience→ Number input
 
-Run the application (recommended):
-npm run start
+✅ Conditional Filter Rules
+   - Position is disabled until Name is filled
+   - Status is disabled until Position is selected
+   - Years of Experience is always enabled
 
-React app: http://localhost:5173
-JSON Server API: http://localhost:3001/candidates
+✅ UX / UI
+   - Real-time filtering while typing/selecting
+   - Reset filters button
+   - Responsive layout:
+     • Desktop → Table view
+     • Mobile  → Card view
 
-Run separately (optional):
 
-Start JSON Server only:
-npm run server
+────────────────────────────────────────────────────────────────────
+🧰 TECH STACK
+────────────────────────────────────────────────────────────────────
 
-Start React dev server only:
-npm run dev
+• React
+• TypeScript
+• Vite
+• Material UI (MUI)
+• JSON Server (mock API)
+• TanStack Query (bonus)
+• Vitest (unit tests)
 
-RUNNING TESTS
 
-Run tests once:
-npm run test:run
+────────────────────────────────────────────────────────────────────
+🚀 GETTING STARTED
+────────────────────────────────────────────────────────────────────
 
-Run tests in watch mode:
-npm run test
+1) Install dependencies
+   --------------------------------------------------
+   npm install
 
-Open Vitest UI:
-npm run test:ui
+2) Run the application (recommended)
+   --------------------------------------------------
+   npm run start
 
-PROJECT STRUCTURE
+   React app:
+   http://localhost:5173
+
+   JSON Server API:
+   http://localhost:3001/candidates
+
+Optional — run separately:
+   --------------------------------------------------
+   • Start JSON Server only:
+     npm run server
+
+   • Start React dev server only:
+     npm run dev
+
+
+────────────────────────────────────────────────────────────────────
+🧪 RUNNING TESTS
+────────────────────────────────────────────────────────────────────
+
+• Run tests once:
+  npm run test:run
+
+• Run tests in watch mode:
+  npm run test
+
+• Open Vitest UI:
+  npm run test:ui
+
+
+────────────────────────────────────────────────────────────────────
+📁 PROJECT STRUCTURE
+────────────────────────────────────────────────────────────────────
 
 src/
-  components/
-    CandidatesTable.tsx
-  utils/
-    filterCandidates.ts
-    filterCandidates.test.ts
+├─ components/
+│  └─ CandidatesTable.tsx
+└─ utils/
+   ├─ filterCandidates.ts
+   └─ filterCandidates.test.ts
+
 db.json
 
-NOTES
-- Filtering logic is separated from the UI and implemented as a pure function for better testability.
-- TanStack Query is used to manage loading states, errors, and caching.
 
+────────────────────────────────────────────────────────────────────
+📝 NOTES
+────────────────────────────────────────────────────────────────────
+
+• Filtering logic is separated from the UI and implemented as a pure function
+  for better readability and testability.
+
+• TanStack Query is used to manage:
+  - loading states
+  - errors
+  - caching
+
+
+────────────────────────────────────────────────────────────────────
+✅ END
+────────────────────────────────────────────────────────────────────
