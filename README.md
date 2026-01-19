@@ -58,7 +58,9 @@ Getting Started
    
    npm run start
 
+   
    React app:      http://localhost:5173
+   
    JSON Server API: http://localhost:3001/candidates
 
 Run separately (optional)
