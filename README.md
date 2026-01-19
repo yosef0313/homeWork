@@ -80,13 +80,25 @@ Running Tests
 Project Structure
 -----------------
 src/
+
+
   components/
+
     CandidatesTable.tsx
+
+
   utils/
+
     filterCandidates.ts
+
     filterCandidates.test.ts
+
+
   theme/
+
     theme.ts
+
+    
 db.json
 
 
