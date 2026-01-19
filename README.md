@@ -85,7 +85,8 @@ src/
   utils/
     filterCandidates.ts
     filterCandidates.test.ts
-  theme/theme.ts
+  theme/
+    theme.ts
 db.json
 
 
