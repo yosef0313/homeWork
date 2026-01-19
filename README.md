@@ -38,7 +38,7 @@ TECH STACK
 - TanStack Query (bonus)
 - Vitest (unit tests)
 
-GETTING STARTED
+------------- GETTING STARTED -------------
 
 Install dependencies:
 npm install
