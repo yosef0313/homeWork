@@ -109,7 +109,7 @@ function CandidatesTable() {
   const isStatusDisabled = filters.position === '' || isPositionDisabled;
 
 
-// UX: double-click copies the email to clipboard and shows visual feedback.
+// UX: double-click copies the email to clipboard and shows visual feedback , i chose to do that for better UX.
   const handleCopyEmail = (email: string) => {
     navigator.clipboard.writeText(email);
     setSnackbarOpen(true);
@@ -312,7 +312,8 @@ function CandidatesTable() {
 
         {error ? (
           <Alert severity="error" sx={{ borderRadius: 3 }}>
-            Failed to fetch data. Ensure JSON Server is running. ({error.message})
+           
+            Failed to fetch data. Ensure JSON Server is running. 
           </Alert>
         ) : isLoading ? (
           <LinearProgress sx={{ borderRadius: 4, height: 6 }} />
@@ -320,9 +321,11 @@ function CandidatesTable() {
           <Box sx={{ textAlign: 'center', py: 8 }}>
             <Typography variant="h6" color="text.secondary">No results found</Typography>
           </Box>
-
-        ) : isMobile ? (
+          
+        ) : isMobile ? (  // Responsive design: Cards for mobile, table for larger screens.
+          
           <Stack spacing={2}>
+            
             {filteredCandidates.map((row) => {
               const statusColors = getStatusStyle(row.status);
               return (
